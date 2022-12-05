@@ -39,8 +39,7 @@ fn calc_points(tuple: &(RPS, RPS)) -> i32 {
     }
 }
 
-pub fn part1() {
-    let filename = "input.txt";
+pub fn part1(filename: &String) {
     let content = std::fs::read_to_string(filename).expect("Cannot read file");
     let content = content.trim_end();
 

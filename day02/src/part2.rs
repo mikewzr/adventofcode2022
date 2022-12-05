@@ -73,8 +73,7 @@ fn calc_points(theirs: &RPS, strat: &Strategy) -> i32 {
     }
 }
 
-pub fn part2() {
-    let filename = "input.txt";
+pub fn part2(filename: &String) {
     let content = std::fs::read_to_string(filename).expect("Cannot read file");
     let content = content.trim_end();
 
